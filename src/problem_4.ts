@@ -16,10 +16,10 @@ class Student extends Person {
   }
 }
 
-const person = new Person("Alice", 25);
+const person = new Person("Jubayer", 25);
 console.log(person.getDetails()); 
 
-const student = new Student("Bob", 20, "A");
+const student = new Student("Ahmmod", 20, "A");
 console.log(student.getDetails()); 
 console.log(student.getGrade());
 
