@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "jshint": "^2.13.6"
+  },
+  "name": "day1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node-dev": "^2.0.0"
+  },
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
