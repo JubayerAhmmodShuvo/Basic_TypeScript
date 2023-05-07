@@ -1,11 +1,11 @@
 "use strict";
 class Person {
-    constructor(name1, age1) {
-        this.name1 = name1;
-        this.age1 = age1;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
     getDetails() {
-        return `${this.name} is ${this.age} years old.`;
+        return `${this.name}, ${this.age}`;
     }
 }
 class Student extends Person {
@@ -14,6 +14,11 @@ class Student extends Person {
         this.grade = grade;
     }
     getGrade() {
-        return `${this.name} has a grade of ${this.grade}.`;
+        return this.grade;
     }
 }
+const person = new Person("Alice", 25);
+console.log(person.getDetails());
+const student = new Student("Bob", 20, "A");
+console.log(student.getDetails());
+console.log(student.getGrade());

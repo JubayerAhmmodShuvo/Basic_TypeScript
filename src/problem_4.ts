@@ -1,8 +1,8 @@
 class Person {
-  constructor(private name1: string, private age1: number) { }
+  constructor(private name: string, private age: number) { }
 
   public getDetails(): string {
-    return `${this.name} is ${this.age} years old.`;
+    return `${this.name}, ${this.age}`;
   }
 }
 
@@ -12,6 +12,14 @@ class Student extends Person {
   }
 
   public getGrade(): string {
-    return `${this.name} has a grade of ${this.grade}.`;
+    return this.grade;
   }
 }
+
+const person = new Person("Alice", 25);
+console.log(person.getDetails()); 
+
+const student = new Student("Bob", 20, "A");
+console.log(student.getDetails()); 
+console.log(student.getGrade());
+
