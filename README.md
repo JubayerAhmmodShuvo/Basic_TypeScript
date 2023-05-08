@@ -31,6 +31,10 @@ const myNumber = startLine<number>(1002);
 
 #### Ans:
 
+The type any has less restruction in typescript. We can call it a escape hatch of a typescript type system. By declaring a variable with any we can assign any value to the variable. Then the compiler allow us to perform any kind of operation without checking it's type.
+
+On the other hand the type unknown has more restruction than any type. The unknow type is simple but sometimes its more tricky. When we declare a variable with unknown the compiler won't perform any kind of operation with out chekcing its type. It provides more type safety than any type. 
+
 ### Can you give an example of how to use enums in TypeScript?
 
 #### Ans:
