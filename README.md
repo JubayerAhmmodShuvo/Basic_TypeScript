@@ -18,14 +18,14 @@ Types can refer to any data types, including object types, union types , primiti
 
 #### Ans:
 Generics in TypeScript allows us to write reusable code that can work with a variety of types.
-
+```
   function startLine<T>(arg: T): T {
   return arg;
 }
 
 const myString = startLine<string>("Hello, How are you? ");
 const myNumber = startLine<number>(1002);
-
+```
 
 ### What is the difference between an "unknown" and "any" type in TypeScript?
 
@@ -34,6 +34,7 @@ const myNumber = startLine<number>(1002);
 ### Can you give an example of how to use enums in TypeScript?
 
 #### Ans:
+```
 enum RollNumber {
   Jubayer=1,
   Ahmmod=2,
@@ -42,6 +43,8 @@ enum RollNumber {
 
 const FirstBoy = RollNumber.Jubayer;
 console.log(FirstBoy);
+
+```
 
 
 ### What is the "as" keyword used for in TypeScript?
